@@ -1,0 +1,11 @@
+# test the debug module
+- hosts: web1
+  sudo: yes
+  gather_facts: no
+  
+  tasks:
+  - user:
+    name: deploy
+    comment: "deploy"
+    group: deploy
+
