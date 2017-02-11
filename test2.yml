@@ -5,8 +5,5 @@
   
   tasks:
 
-  - user:
-    name: deploy
-    comment: "deploy"
-    group: deploy
-
+  - name: install ntp
+    apt: name=ntp state=installed update_cache=yes
